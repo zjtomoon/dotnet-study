@@ -1,0 +1,13 @@
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions.deps.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions.runtimeconfig.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions.runtimeconfig.dev.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/bin/Debug/netcoreapp3.1/handlingExceptions.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.csprojAssemblyReference.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.AssemblyInfoInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.AssemblyInfo.cs
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.csproj.CoreCompileInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter03/handlingExceptions/obj/Debug/netcoreapp3.1/handlingExceptions.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello.deps.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello.runtimeconfig.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello.runtimeconfig.dev.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/bin/Debug/netcoreapp3.1/hello.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.csprojAssemblyReference.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.AssemblyInfoInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.AssemblyInfo.cs
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.csproj.CoreCompileInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/day01/hello/obj/Debug/netcoreapp3.1/hello.genruntimeconfig.cache

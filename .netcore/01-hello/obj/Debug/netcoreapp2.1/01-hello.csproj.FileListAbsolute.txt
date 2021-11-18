@@ -1,0 +1,11 @@
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\bin\Debug\netcoreapp2.1\01-hello.deps.json
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\bin\Debug\netcoreapp2.1\01-hello.runtimeconfig.json
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\bin\Debug\netcoreapp2.1\01-hello.runtimeconfig.dev.json
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\bin\Debug\netcoreapp2.1\01-hello.dll
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\bin\Debug\netcoreapp2.1\01-hello.pdb
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.csprojAssemblyReference.cache
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.csproj.CoreCompileInputs.cache
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.AssemblyInfoInputs.cache
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.AssemblyInfo.cs
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.dll
+D:\workspace\csharp\csharpExercise\.netcore\01-hello\obj\Debug\netcoreapp2.1\01-hello.pdb

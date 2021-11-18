@@ -1,0 +1,13 @@
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.csprojAssemblyReference.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.AssemblyInfoInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.AssemblyInfo.cs
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.csproj.CoreCompileInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers.deps.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers.runtimeconfig.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers.runtimeconfig.dev.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/bin/Debug/netcoreapp3.1/numbers.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter02/numbers/obj/Debug/netcoreapp3.1/numbers.genruntimeconfig.cache

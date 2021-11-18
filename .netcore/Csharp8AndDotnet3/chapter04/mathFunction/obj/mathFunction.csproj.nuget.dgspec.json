@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/mathFunction.csproj": {}
+  },
+  "projects": {
+    "/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/mathFunction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/mathFunction.csproj",
+        "projectName": "mathFunction",
+        "projectPath": "/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/mathFunction.csproj",
+        "packagesPath": "/home/alex/.nuget/packages/",
+        "outputPath": "/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/software/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

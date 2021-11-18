@@ -1,0 +1,13 @@
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction.deps.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction.runtimeconfig.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction.runtimeconfig.dev.json
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/bin/Debug/netcoreapp3.1/mathFunction.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.csprojAssemblyReference.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.AssemblyInfoInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.AssemblyInfo.cs
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.csproj.CoreCompileInputs.cache
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.dll
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.pdb
+/home/alex/workspace/csharp/csharp-exercise/.netcore/Csharp8AndDotnet3/chapter04/mathFunction/obj/Debug/netcoreapp3.1/mathFunction.genruntimeconfig.cache
