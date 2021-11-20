@@ -5,7 +5,7 @@ using Packet.Shared;
 
 namespace PeopleApp
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -79,6 +79,8 @@ namespace PeopleApp
             arg0:gunny.Name,
             arg1:gunny.HomePlanet,
             arg2:gunny.Instantiated);
+
+            //ReadLine();
         }
     }
 }
