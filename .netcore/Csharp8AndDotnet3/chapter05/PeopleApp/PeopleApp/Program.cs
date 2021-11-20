@@ -81,6 +81,8 @@ namespace PeopleApp
             arg2:gunny.Instantiated);
 
             //ReadLine();
+            bob.WriteToConsole();
+            WriteLine(bob.GetOrigin());
         }
     }
 }
