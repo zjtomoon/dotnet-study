@@ -68,6 +68,15 @@ namespace Packet.Shared
             return string.Format(format:"command is {0},number is {1},active is {2}",
                 arg0: command,arg1: number,arg2: active);
         }
+        
+        //控制参数的传递方式
+        public void PassingParameter(int x, ref int y, out int z)
+        {
+            z = 99;
+            x++;
+            y++;
+            z++;
+        }
     }
     public class BankAccount
     {

@@ -107,6 +107,23 @@ namespace PeopleApp
             WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide"));
 
             WriteLine(bob.OptionalParameters("Poke!",active: false));
+            
+            
+            WriteLine("========================================");
+
+            int a = 10;
+            int b = 20;
+            int c = 31;
+            
+            WriteLine($"Before: a = {a}, b ={b}, c = {c}");
+            bob.PassingParameter(a,ref b,out c);
+            WriteLine($"After: a = {a},b = {b},c = {c}");
+
+            int d = 10;
+            int e = 20;
+            WriteLine($"Before: d = {d},e = {e}, f doesn't exist yet!");
+            bob.PassingParameter(d,ref e,out int f);
+            WriteLine($"After: d = {d}, e = {e},f = {f}");
         }
     }
 }
