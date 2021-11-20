@@ -17,6 +17,9 @@ namespace PeopleApp
             bob.Name = "Bob Smith";
             bob.DateOfBirth = new DateTime(1965, 12, 22);
             bob.FavouriteAncientWonder = WondersOfTheAcientWorld.StatueOfZeusAtOlympia;
+            bob.BucketList = WondersOfTheAcientWorld.HangingGardensOfBabylon | WondersOfTheAcientWorld.MausoleumAtHalicarnassus;
+
+            WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}");
 
             WriteLine(
                 //format: "{0}  was born on {1:dddd, d MMMM yyyy}",
@@ -38,6 +41,29 @@ namespace PeopleApp
                 arg0: alice.Name,
                 arg1: alice.DateOfBirth);
 
+            WriteLine("==========================");
+
+            BankAccount.InterestRate = 0.012M;
+
+            var jonesAccount = new BankAccount();
+            jonesAccount.AccountName = "Mrs. Jones";
+            jonesAccount.Balance = 2400;
+
+            WriteLine(format: "{0} earned {1:C}  interest.",
+                arg0:jonesAccount.AccountName,
+                arg1:jonesAccount.Balance * BankAccount.InterestRate);
+            
+            var gerrierAccount = new BankAccount();
+            gerrierAccount.AccountName = "Ms. Gerrier";
+            gerrierAccount.Balance = 98;
+
+            WriteLine(format: "{0} earned {1:C} interest.",
+                arg0: gerrierAccount.AccountName,
+                arg1: gerrierAccount.Balance * BankAccount.InterestRate);
+
+            WriteLine($"{bob.Name} is a {Person.Species}");
+
+            WriteLine($"{bob.Name} was born on {bob.HomePlanet}");
         }
     }
 }
