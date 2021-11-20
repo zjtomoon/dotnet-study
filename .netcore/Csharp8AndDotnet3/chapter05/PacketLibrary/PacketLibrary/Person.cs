@@ -12,6 +12,20 @@ namespace Packet.Shared
         public const string Species = "Homo Sapien";
 
         public readonly string HomePlanet = "Earth";
+        public readonly DateTime Instantiated;
+
+        public Person()
+        {
+            Name = "UnKnown";
+            Instantiated = DateTime.Now;
+        }
+
+        public Person(string initialName, string homePlanet)
+        {
+            Name = initialName;
+            HomePlanet = homePlanet;
+            Instantiated = DateTime.Now;
+        }
     }
     public class BankAccount
     {
