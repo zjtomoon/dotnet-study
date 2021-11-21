@@ -124,6 +124,41 @@ namespace PeopleApp
             WriteLine($"Before: d = {d},e = {e}, f doesn't exist yet!");
             bob.PassingParameter(d,ref e,out int f);
             WriteLine($"After: d = {d}, e = {e},f = {f}");
+
+            var sam = new Person
+            {
+                Name = "Sam",
+                DateOfBirth = new DateTime(1972, 1, 27)
+            };
+
+            WriteLine(sam.Orgin);
+
+
+            WriteLine("================================");
+            sam.FavouriteIceCream = "Chocolate Fudge";
+            WriteLine($"Sam's favourite ice-cream flavor is {sam.FavouriteIceCream}");
+
+            sam.FavouritePrimaryColor = "Red";
+            WriteLine($"Sam's favourite primary color is {sam.FavouritePrimaryColor}");
+
+            WriteLine("+++++++++++++++++++++++++++++++++++");
+
+            bob.Children.Add(new Person { Name = "Alfred" });
+            bob.Children.Add(new Person { Name = "Zoe1" });
+            WriteLine($"{bob.Name} has {bob.Children.Count} children:");
+
+            for (int child = 0; child < bob.Children.Count; child++)
+            {
+                WriteLine($"{bob.Children[child].Name}");  
+            }
+
+            sam.Children.Add(new Person { Name = "Charlie" });
+            sam.Children.Add(new Person { Name = "Ella" });
+            WriteLine($"Sam's first child is {sam.Children[0].Name}");
+            WriteLine($"Sam's second child is {sam.Children[1].Name}");
+            WriteLine($"Sam's first child is {sam[0].Name}");
+            WriteLine($"Sam's second child is {sam[1].Name}");
+
         }
     }
 }

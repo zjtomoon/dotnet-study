@@ -15,6 +15,7 @@ namespace Packet.Shared
         public readonly string HomePlanet = "Earth";
         public readonly DateTime Instantiated;
 
+
         public Person()
         {
             Name = "UnKnown";
