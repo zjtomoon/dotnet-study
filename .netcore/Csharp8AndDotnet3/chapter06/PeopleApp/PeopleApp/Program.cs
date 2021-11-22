@@ -256,6 +256,16 @@ namespace PeopleApp
             var dv2 = new DisplacementVector(-2, 7);
             var dv3 = dv1 + dv2;
             WriteLine($"({dv1.X},{dv1.Y}) + ({dv2.X} , {dv2.Y}) = ({dv3.X}, {dv3.Y})");
+            
+            
+            WriteLine("===============================");
+
+            Employee john = new Employee
+            {
+                Name = "John Jones",
+                DateOfBirth = new DateTime(1970, 7, 28)
+            };
+            john.WriteToConsole();
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
