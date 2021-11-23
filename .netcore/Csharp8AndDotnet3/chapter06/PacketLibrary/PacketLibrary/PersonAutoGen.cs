@@ -133,6 +133,19 @@ namespace Packet.Shared
         {
             return Name.CompareTo(other.Name);//按姓名的字母顺序排序
         }
+
+        public void TimeTravel(DateTime when)
+        {
+            if (when <= DateOfBirth)
+            {
+                throw new PersonException(
+                    "If you travel back in time to a date earlier than your own birth,then the universe will explode!");
+            }
+            else
+            {
+                WriteLine($"Welcome to {when:yyyy} !");
+            }
+        }
     }
 
     public class PersonComparer : IComparer<Person> //首先用最短的姓名对人员进行排序

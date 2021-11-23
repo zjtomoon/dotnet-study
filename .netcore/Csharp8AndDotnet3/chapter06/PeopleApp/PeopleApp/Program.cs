@@ -280,10 +280,50 @@ namespace PeopleApp
                 EmployeeCode = "AA123"
             };
             Person aliceInPerson = aliceInEmployee;
-            aliceInEmployee.WriteToConsole();
+            /*aliceInEmployee.WriteToConsole();
             aliceInPerson.WriteToConsole();
             WriteLine(aliceInEmployee.ToString());
-            WriteLine(aliceInPerson.ToString());
+            WriteLine(aliceInPerson.ToString());*/
+
+            //避免类型转换异常
+            
+            //将显式的转换语句封装在if语句中
+            if (aliceInPerson is Employee)
+            {
+                WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+                
+                Employee explicitAlice = (Employee) aliceInPerson;
+            }
+            
+            //使用as关键字进行强制类型转换
+            Employee aliceAsEmployee = aliceInPerson as Employee;
+            if (aliceAsEmployee != null)
+            {
+                WriteLine($"{nameof(aliceInPerson)} As an Employee");
+            }
+
+            try
+            {
+                john.TimeTravel(new DateTime(1999,12,31));
+                john.TimeTravel(new DateTime(1950,12,25));
+            }
+            catch (PersonException ex)
+            {
+                WriteLine(ex.Message);
+            }
+            
+            WriteLine("--------------------");
+            string email1 = "pamela@test.com";
+            string email2 = "ian&test.com";
+            WriteLine(
+                "{0} is valid e-mail address: {1}",
+                arg0:email1,
+                arg1:StringExtensions.IsValidEmail(email1));
+            WriteLine(
+                "{0} is valid e-mail address : {1}",
+                arg0:email2,
+                arg1:StringExtensions.IsValidEmail(email2));
+            
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
