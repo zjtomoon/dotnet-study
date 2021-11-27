@@ -67,6 +67,24 @@ namespace WorkingWithDirectories
             StreamReader textReader = File.OpenText(backupFile);
             WriteLine(textReader.ReadToEnd());
             textReader.Close();
+            
+            //管理路径
+            WriteLine($"Folder Name: {GetDirectoryName(textFile)}");
+            WriteLine($"File Name : {GetFileName(textFile)}");
+            WriteLine("File Name without Extension: {0}",GetFileNameWithoutExtension(textFile));
+            WriteLine($"File Extension: {GetExtension(textFile)}");
+            WriteLine($"Random File Name : {GetRandomFileName()}");
+            WriteLine($"Temporary File Name : {GetTempFileName()}");
+
+            var info = new FileInfo(backupFile);
+            WriteLine($"{backupFile}:");
+            WriteLine($"Contains {info.Length} bytes");
+            WriteLine($"Last accessed {info.LastAccessTime}");
+            WriteLine($"Has readonly set to {info.IsReadOnly}");
+            
+            FileStream file = File.Open(".",FileMode.Open,FileAccess.Read,FileShare.Read)
+            
+            WriteLine("Is the backup file compressed? {0}",info.Attributes.HasFlag(FileAttributes.Compressed));
         }
     }
 }
