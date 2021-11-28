@@ -15,12 +15,13 @@ namespace WorkingWithStreams
             //WorkWithText();
             WorkWithXml();
             WorkWithCompression();
+            WorkWithCompression(useBrotli: false);
         }
-        
+
         static string[] callsigns = new string[]
         {
-            "Husker" , "Starbuck" , "Apollo" , "Boomer",
-            "Bulldog", "Athena" , "Helo" , "Racetrack"
+            "Husker", "Starbuck", "Apollo", "Boomer",
+            "Bulldog", "Athena", "Helo", "Racetrack"
         };
 
         //写入文本流
@@ -34,8 +35,9 @@ namespace WorkingWithStreams
             {
                 text.WriteLine(item);
             }
+
             text.Close();
-            
+
             WriteLine("{0} contains {1:N0} bytes",
                 arg0: textFile,
                 arg1: new FileInfo(textFile).Length);
@@ -91,7 +93,7 @@ namespace WorkingWithStreams
         }
 
         //压缩流
-        static void WorkWithCompression()
+        /*static void WorkWithCompression()
         {
             //压缩xml输出
             string gzipFilePath = Combine(CurrentDirectory, "streams.gzip");
@@ -129,6 +131,69 @@ namespace WorkingWithStreams
                         }
                     }
                 } 
+            }
+        }*/
+        static void WorkWithCompression(bool useBrotli = true)
+        {
+            //压缩xml输出
+            string fileExt = useBrotli ? "brotli" : "gzip";
+            //string gzipFilePath = Combine(CurrentDirectory, "streams.gzip");
+            string filePath = Combine(CurrentDirectory, $"streams.{fileExt}");
+            //FileStream gzipFile = File.Create(gzipFilePath);
+            FileStream file = File.Create(filePath);
+            Stream compressor;
+            if (useBrotli)
+            {
+                compressor = new BrotliStream(file,CompressionMode.Compress);
+            }
+            else
+            {
+                compressor = new GZipStream(file,CompressionMode.Compress);
+            }
+
+            using (compressor)
+            {
+                using (XmlWriter xmlGzip = XmlWriter.Create(compressor))
+                {
+                    xmlGzip.WriteStartDocument();
+                    xmlGzip.WriteStartElement("callsigns");
+
+                    foreach (string item in callsigns)
+                    {
+                        xmlGzip.WriteElementString("callsign", item);
+                    }
+                }
+            }
+
+            WriteLine("{0} contains {1:N0} bytes.", filePath, new FileInfo(filePath).Length);
+            WriteLine($"The compressed contents:");
+            WriteLine(File.ReadAllText(filePath));
+
+            //读取压缩文件
+            WriteLine("Reading the compressed XML file:");
+            file = File.Open(filePath, FileMode.Open);
+            Stream decompressor;
+            if (useBrotli)
+            {
+                decompressor = new BrotliStream(file,CompressionMode.Decompress);
+            }
+            else
+            {
+                decompressor = new GZipStream(file,CompressionMode.Decompress);
+            }
+            using (decompressor)
+            {
+                using (XmlReader reader = XmlReader.Create(decompressor))
+                {
+                    while (reader.Read())
+                    {
+                        if ((reader.NodeType == XmlNodeType.Element) && (reader.Name == "callsign"))
+                        {
+                            reader.Read();
+                            WriteLine($"{reader.Value}");
+                        }
+                    }
+                }
             }
         }
     }
