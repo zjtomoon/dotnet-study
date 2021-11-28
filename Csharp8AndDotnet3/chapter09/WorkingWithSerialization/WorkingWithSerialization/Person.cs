@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace Packt.Shared
 {
@@ -10,8 +11,15 @@ namespace Packt.Shared
         {
             Salary = initialSalary;
         }
+        //生成紧凑的XML
+        //用[XmlAttribute]特性装饰除了children外的所有属性
+        [XmlAttribute("fname")]
         public string FirstName { set; get; }
+        
+        [XmlAttribute("lname")]
         public string LastName { get; set; }
+        
+        [XmlAttribute("dob")]
         public DateTime DateOfBirth { get; set; }
         public HashSet<Person> Children { get; set; }
         protected decimal Salary { get; set; }

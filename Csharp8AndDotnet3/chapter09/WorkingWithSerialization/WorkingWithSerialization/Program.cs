@@ -6,12 +6,16 @@ using Packt.Shared;
 using static System.Environment;
 using static System.IO.Path;
 using static System.Console;
+using System.Threading.Tasks;
+using NuJson = System.Text.Json.JsonSerializer;
 
 namespace WorkingWithSerialization
 {
     class Program
     {
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        //通过将void改为async Task以支持等待任务
+        static async Task Main(string[] args)
         {
             var people = new List<Person>
             {
@@ -56,6 +60,45 @@ namespace WorkingWithSerialization
             WriteLine();
             
             WriteLine(File.ReadAllText(path));
+            
+            //反序列化XML文件
+            using (FileStream xmlLoad = File.Open(path,FileMode.Open))
+            {
+                var loadedPeople = (List<Person>) xs.Deserialize(xmlLoad);
+
+                foreach (var  item in loadedPeople)
+                {
+                    WriteLine("{0} has {1} children.",item.LastName,item.Children.Count);
+                }
+            }
+            
+            //用Json序列化格式
+            string jsonPath = Combine(CurrentDirectory, "people.json");
+            using (StreamWriter jsonStream = File.CreateText(jsonPath))
+            {
+                var jss = new Newtonsoft.Json.JsonSerializer();
+                jss.Serialize(jsonStream,people);
+            }
+            
+            WriteLine();
+            WriteLine("Written {0:N0} bytes of JSON to : {1}",
+                arg0: new FileInfo(jsonPath).Length,
+                arg1: jsonPath);
+            
+            WriteLine(File.ReadAllText(jsonPath));
+            
+            //反序列化Json文件，然后输出人员的姓名以及子女数目
+            using (FileStream jsonLoad = File.Open(jsonPath,FileMode.Open))
+            {
+                var loadedPeople = (List<Person>) await NuJson.DeserializeAsync(
+                    utf8Json: jsonLoad,
+                    returnType: typeof(List<Person>));
+
+                foreach (var item in loadedPeople)
+                {
+                    WriteLine("{0} has {1} children.",item.LastName,item.Children?.Count);
+                }
+            }
         }
     }
 }
