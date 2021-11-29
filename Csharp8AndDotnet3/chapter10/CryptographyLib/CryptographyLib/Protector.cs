@@ -99,5 +99,20 @@ namespace Packt.Shared
             return Convert.ToBase64String(
                 sha.ComputeHash(Encoding.Unicode.GetBytes(saltedPassword)));
         }
+
+        public static string PublicKey;
+
+        public static string ToXmlStringExt(this RSA rsa, bool includePrivateParameters)
+        {
+            var p = rsa.ExportParameters(includePrivateParameters);
+            XElement xml;
+            if (includePrivateParameters)
+            {
+                xml = new XElement("RSAKeyValue",
+                    new XElement("Modulus",ToBase64String(p.Modulus)),
+                    new XElement("Exponent",ToBase64String(p.Exponent)),
+                    new XElement());
+            }
+        }
     }
 }
