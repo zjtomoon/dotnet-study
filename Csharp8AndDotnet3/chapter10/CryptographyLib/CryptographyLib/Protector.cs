@@ -29,12 +29,14 @@ namespace Packt.Shared
 
             using (var ms = new MemoryStream())
             {
-                using (var cs = new CryptoStream(ms,aes.CreateEncryptor(),CryptoStreamMode.Write))
+                using (var cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write))
                 {
-                    cs.Write(plainBytes,0,plainBytes.Length);
+                    cs.Write(plainBytes, 0, plainBytes.Length);
                 }
+
                 encryptedBytes = ms.ToArray();
             }
+
             return Convert.ToBase64String(encryptedBytes);
         }
 
@@ -49,9 +51,9 @@ namespace Packt.Shared
 
             using (var ms = new MemoryStream())
             {
-                using (var cs = new CryptoStream(ms,aes.CreateDecryptor(),CryptoStreamMode.Write))
+                using (var cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Write))
                 {
-                    cs.Write(cryptoBytes,0,cryptoBytes.Length);
+                    cs.Write(cryptoBytes, 0, cryptoBytes.Length);
                 }
 
                 plainBytes = ms.ToArray();
@@ -61,8 +63,8 @@ namespace Packt.Shared
         }
 
         private static Dictionary<string, User> Users = new Dictionary<string, User>();
-        
-        public static User Register(string username,string password)
+
+        public static User Register(string username, string password)
         {
             var rng = RandomNumberGenerator.Create();
             var saltBytes = new byte[16];
@@ -74,9 +76,8 @@ namespace Packt.Shared
                 Name = username, Salt = saltText,
                 SaltedHashedPassword = saltedhashedPassword
             };
-            Users.Add(user.Name,user);
+            Users.Add(user.Name, user);
             return user;
-
         }
 
         public static bool CheckPassword(string username, string password)
@@ -102,6 +103,7 @@ namespace Packt.Shared
 
         public static string PublicKey;
 
+        //将RSA实例转换为XML
         public static string ToXmlStringExt(this RSA rsa, bool includePrivateParameters)
         {
             var p = rsa.ExportParameters(includePrivateParameters);
@@ -109,10 +111,66 @@ namespace Packt.Shared
             if (includePrivateParameters)
             {
                 xml = new XElement("RSAKeyValue",
-                    new XElement("Modulus",ToBase64String(p.Modulus)),
-                    new XElement("Exponent",ToBase64String(p.Exponent)),
-                    new XElement());
+                    new XElement("Modulus", ToBase64String(p.Modulus)),
+                    new XElement("Exponent", ToBase64String(p.Exponent)),
+                    new XElement("P", ToBase64String(p.P)),
+                    new XElement("Q", ToBase64String(p.Q)),
+                    new XElement("DP", ToBase64String(p.DP)),
+                    new XElement("DQ", ToBase64String(p.DQ)),
+                    new XElement("InverseQ", ToBase64String(p.InverseQ)));
             }
+            else
+            {
+                xml = new XElement("RSAKeyValue", new XElement("Modulus", ToBase64String(p.Modulus),
+                    new XElement("Exponent", ToBase64String(p.Exponent))));
+            }
+
+            return xml?.ToString(); //?.表示Null检查运算符
+        }
+
+        //将XML实例转换为RSA实例
+        public static void FromXmlStringExt(this RSA rsa, string parametersAsXml)
+        {
+            var xml = XDocument.Parse(parametersAsXml);
+            var root = xml.Element("RSAKeyValue");
+            var p = new RSAParameters
+            {
+                Modulus = FromBase64String(root.Element("Modulus").Value),
+                Exponent = FromBase64String(root.Element("Exponent").Value)
+            };
+            if (root.Element("p") != null)
+            {
+                p.P = FromBase64String(root.Element("P").Value);
+                p.Q = FromBase64String(root.Element("Q").Value);
+                p.DP = FromBase64String(root.Element("DP").Value);
+                p.DQ = FromBase64String(root.Element("DQ").Value);
+                p.InverseQ = FromBase64String(root.Element("InverseQ").Value);
+            }
+            rsa.ImportParameters(p);
+        }
+
+        //生成签名
+        public static string GenerateSignature(string data)
+        {
+            byte[] dataBytes = Encoding.Unicode.GetBytes(data);
+            var sha = SHA256.Create();
+            var hashedData = sha.ComputeHash(dataBytes);
+            var rsa = RSA.Create();
+            PublicKey = rsa.ToXmlStringExt(false);
+            return ToBase64String(rsa.SignHash(hashedData, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1));
+        }
+        
+        //验证签名
+        public static bool ValidateSignature(string data, string signature)
+        {
+            byte[] dataBytes = Encoding.Unicode.GetBytes(data);
+            var sha = SHA256.Create();
+            var hashedData = sha.ComputeHash(dataBytes);
+            byte[] signatureBytes = FromBase64String(signature);
+            var rsa = RSA.Create();
+            rsa.FromXmlStringExt(PublicKey);
+
+            return rsa.VerifyHash(hashedData, signatureBytes, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
         }
     }
 }
