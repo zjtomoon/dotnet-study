@@ -27,7 +27,7 @@ namespace SigningApp
             
             if (Protector.ValidateSignature(data,fakeSignature))
             {
-                WriteLine("Correct! Sinature is valid. ");
+                WriteLine("Correct! Signature is valid. ");
             }
             else
             {

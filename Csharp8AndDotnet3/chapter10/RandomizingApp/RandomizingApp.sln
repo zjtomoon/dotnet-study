@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizingApp", "RandomizingApp\RandomizingApp.csproj", "{48C6E8D7-1069-483A-84DE-70236EBC9544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptographyLib", "..\CryptographyLib\CryptographyLib\CryptographyLib.csproj", "{43F458CA-E4BE-47E9-991B-27490EDF68D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48C6E8D7-1069-483A-84DE-70236EBC9544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C6E8D7-1069-483A-84DE-70236EBC9544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C6E8D7-1069-483A-84DE-70236EBC9544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C6E8D7-1069-483A-84DE-70236EBC9544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F458CA-E4BE-47E9-991B-27490EDF68D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F458CA-E4BE-47E9-991B-27490EDF68D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F458CA-E4BE-47E9-991B-27490EDF68D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F458CA-E4BE-47E9-991B-27490EDF68D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
