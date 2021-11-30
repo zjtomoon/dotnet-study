@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LingWithObjects", "LingWithObjects\LingWithObjects.csproj", "{CD8C452F-6259-4C38-82C2-2A1097F8DD25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD8C452F-6259-4C38-82C2-2A1097F8DD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8C452F-6259-4C38-82C2-2A1097F8DD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8C452F-6259-4C38-82C2-2A1097F8DD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8C452F-6259-4C38-82C2-2A1097F8DD25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
