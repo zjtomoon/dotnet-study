@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Proxies;
 
 namespace Packt.Shared
 {
@@ -11,6 +12,7 @@ namespace Packt.Shared
         {
             string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "Northwind.db");
             optionsBuilder.UseSqlite($"Filename={path}");
+            //optionsBuilder.UseLazyLoadingProxies().UseSqlite($"Filename={path}"); //延迟加载
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -19,6 +21,11 @@ namespace Packt.Shared
                 .Property(category => category.CategoryName)
                 .IsRequired()
                 .HasMaxLength(15);
+
+            //添加全局过滤器以删除停产的产品
+            modelBuilder.Entity<Product>()
+                .HasQueryFilter(p => !p.Discontinued);
         }
+        
     }
 }
