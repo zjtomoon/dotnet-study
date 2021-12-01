@@ -174,13 +174,13 @@ namespace LinqWithEFCore
         }
         static void Main(string[] args)
         {
-            //FilterAndSort();
+            FilterAndSort();
             //JoinCategoriesAndProducts();
             //GroupJoinCategoriesAndProducts();
             //AggregateProducts();
             //CustomExtensionMethod();
             //OutputProductsAsXml();
-            ProcessSettings();
+            //ProcessSettings();
         }
         
     }
