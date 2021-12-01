@@ -17,9 +17,9 @@ namespace WorkingWithEFCore
         static void Main(string[] args)
         {
             //QueryingCategories();
-            //QueryingProducts();
+            QueryingProducts();
             //QueryingWithLike();
-            if (AddProduct(6,"Bob's Burgers",500M))
+            /*if (AddProduct(6,"Bob's Burgers",500M))
             {
                 WriteLine("Add product successful");
             }
@@ -28,9 +28,9 @@ namespace WorkingWithEFCore
             {
                 WriteLine("Update product price successful.");
             }
-            ListProducts();*/
+            ListProducts();#1#
             int deleted = DeleteProducts("Bob");
-            WriteLine($"{deleted} product(s) where deleted.");
+            WriteLine($"{deleted} product(s) where deleted.");*/
             ListProducts();
         }
 
@@ -158,7 +158,7 @@ namespace WorkingWithEFCore
                 WriteLine("{0,-3} {1,-35} {2,8} {3,5} {4}",
                     "ID","Product Name","Cost","Stock","Disc.");
 
-                foreach (var item in db.Products/*.OrderByDescending(p => p.Cost)*/) 
+                foreach (var item in db.Products.OrderByDescending(p => p.Cost)) 
                 {
                     /*
                      SQLite cannot order by expressions of type 'decimal'. Convert the values to 

@@ -25,6 +25,11 @@ namespace Packt.Shared
             //添加全局过滤器以删除停产的产品
             modelBuilder.Entity<Product>()
                 .HasQueryFilter(p => !p.Discontinued);
+            
+            //添加根据价格排序功能
+            modelBuilder.Entity<Product>()
+                .Property(product => product.Cost)
+                .HasConversion<double>();
         }
         
     }
