@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindContextLib", "NorthwindContextLib\NorthwindContextLib.csproj", "{D10D13BA-8E6E-4963-A232-9BDF1B458183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEntitiesLib", "..\NorthwindEntitiesLib\NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{90A1B750-7068-49BF-A22C-F9C35C6C46AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D10D13BA-8E6E-4963-A232-9BDF1B458183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10D13BA-8E6E-4963-A232-9BDF1B458183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10D13BA-8E6E-4963-A232-9BDF1B458183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10D13BA-8E6E-4963-A232-9BDF1B458183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A1B750-7068-49BF-A22C-F9C35C6C46AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A1B750-7068-49BF-A22C-F9C35C6C46AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A1B750-7068-49BF-A22C-F9C35C6C46AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A1B750-7068-49BF-A22C-F9C35C6C46AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
