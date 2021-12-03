@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindContextLib", "..\N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEntitiesLib", "..\NorthwindEntitiesLib\NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{B0CB8E34-982D-4CDE-931C-4957682CEC4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEmployees", "..\NorthwindEmployees\NorthwindEmployees\NorthwindEmployees.csproj", "{8370C77E-34F7-4ADD-8F44-C4D7E1749D3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B0CB8E34-982D-4CDE-931C-4957682CEC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0CB8E34-982D-4CDE-931C-4957682CEC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0CB8E34-982D-4CDE-931C-4957682CEC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8370C77E-34F7-4ADD-8F44-C4D7E1749D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8370C77E-34F7-4ADD-8F44-C4D7E1749D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8370C77E-34F7-4ADD-8F44-C4D7E1749D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8370C77E-34F7-4ADD-8F44-C4D7E1749D3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
