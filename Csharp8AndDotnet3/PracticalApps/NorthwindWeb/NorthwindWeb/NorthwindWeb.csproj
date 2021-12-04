@@ -4,4 +4,19 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="pages\_ViewStart.cshtml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="Pages\suppliers.cshtml">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="../../NorthwindContextLib/NorthwindContextLib/NorthwindContextLib.csproj" />
+    </ItemGroup>
+
 </Project>

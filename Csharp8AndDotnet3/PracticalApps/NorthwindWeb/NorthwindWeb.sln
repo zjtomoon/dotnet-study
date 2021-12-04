@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindWeb", "NorthwindWeb\NorthwindWeb.csproj", "{2FE6346A-883D-4B3C-9BE9-E9C502B47CE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindContextLib", "..\NorthwindContextLib\NorthwindContextLib\NorthwindContextLib.csproj", "{EE547511-324A-4723-871E-D4DE99FEEB98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEntitiesLib", "..\NorthwindEntitiesLib\NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{EA88C00A-E537-4958-87F1-2FE5EAC06CD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{2FE6346A-883D-4B3C-9BE9-E9C502B47CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FE6346A-883D-4B3C-9BE9-E9C502B47CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FE6346A-883D-4B3C-9BE9-E9C502B47CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE547511-324A-4723-871E-D4DE99FEEB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE547511-324A-4723-871E-D4DE99FEEB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE547511-324A-4723-871E-D4DE99FEEB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE547511-324A-4723-871E-D4DE99FEEB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA88C00A-E537-4958-87F1-2FE5EAC06CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA88C00A-E537-4958-87F1-2FE5EAC06CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA88C00A-E537-4958-87F1-2FE5EAC06CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA88C00A-E537-4958-87F1-2FE5EAC06CD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
