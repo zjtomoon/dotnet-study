@@ -32,7 +32,7 @@ namespace NorthwindWeb.Pages
         public Supplier Supplier { get; set; }
         //通过使用[BindProperty]特性修饰Supplier属性，就可以轻松地将Web页面上地元素与Supplier类中地属性连接起来
         
-        public IActionResult onPost()
+        public IActionResult OnPost() //必须使用驼峰命名法，OnPost()，否则报错
         {
             if (ModelState.IsValid)
             {
