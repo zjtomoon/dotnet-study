@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>aspnet-NorthwindMvc-AF633399-F2BC-42DB-9BDA-4F6069788EE1</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.21" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.21" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.21" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="../../NorthwindContextLib/NorthwindContextLib/NorthwindContextLib.csproj" />
+    </ItemGroup>
+
+</Project>
