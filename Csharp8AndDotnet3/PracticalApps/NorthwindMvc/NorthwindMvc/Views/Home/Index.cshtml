@@ -1,13 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-@model NorthwindMvc.Models.HomeIndexViewModel
-<!-- 要声明模型的类型，使用@model 要与模型实例进行交互，使用@Model-->
+﻿@model NorthwindMvc.Models.HomeIndexViewModel
 @{
-    ViewData["Title"] = "Home Page";
-    string currentItem = "";
+  ViewData["Title"] = "Home Page";
+  string currentItem = "";
 }
-
 <div id="categories" class="carousel slide" data-ride="carousel" 
      data-interval="3000" data-keyboard="true">
   <ol class="carousel-indicators">

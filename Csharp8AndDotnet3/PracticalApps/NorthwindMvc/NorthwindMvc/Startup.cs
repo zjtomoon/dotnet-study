@@ -31,7 +31,8 @@ namespace NorthwindMvc
         {
             string databasePath = Path.Combine("..", "Northwind.db");
             
-            services.AddDbContext<Northwind>(options => options.UseSqlite($"Data Source ={databasePath}"));
+            services.AddDbContext<Northwind>(options => 
+                options.UseSqlite($"Data Source ={databasePath}"));
             
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
