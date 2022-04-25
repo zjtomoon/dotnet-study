@@ -6,7 +6,7 @@ namespace opencv4test
     class hello
     {
         static void Main(string[] args) {
-            Mat image = new Mat("D:\\images\\1.jpg", ImreadModes.Color);
+            Mat image = new Mat("D:\\images\\1.jpg", ImreadModes.Grayscale);
             Cv2.ImShow("demo", image);
             Cv2.WaitKey(0);
         }
