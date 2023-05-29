@@ -8,6 +8,7 @@ namespace Packt.Shared
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
         
+        // C# 注解
         [Column(TypeName = "ntext")]
         public string Description { get; set; }
         
