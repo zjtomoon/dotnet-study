@@ -2,9 +2,6 @@
 
 由于需要runtime才能运行，所以建议在ubuntu/windows平台使用
 
-Emgu.CV.runtime.mini.macos 
-
-OpenCvSharp4.runtime.osx.10.15-x64 
 
 # .net web框架
 
